@@ -27,7 +27,7 @@ namespace LoggerLibrary
         public void Logexception(string message)
         {
             string fileName = string.Format("{0}_{1}.log", "Exception", "fechadehoy");
-            string logFilePath = string.Format(@"{0}\{1}", "C:\\Users\\Alayn Juarez\\Documents\\Visual Studio 2017", fileName);
+            string logFilePath = string.Format(@"{0}\{1}", "C:\\Test", fileName);
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("----------------------------------------");
             sb.AppendLine(DateTime.Now.ToString());

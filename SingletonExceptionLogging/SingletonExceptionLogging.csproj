@@ -155,29 +155,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\EmpleadoesController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Empleado.cs">
-      <DependentUpon>EmpleadoModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EmpleadoModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmpleadoModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EmpleadoModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmpleadoModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EmpleadoModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmpleadoModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Employee.cs">
       <DependentUpon>EmployeeModel.tt</DependentUpon>
@@ -212,16 +193,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\EmpleadoModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>EmpleadoModel.Context.cs</LastGenOutput>
-      <DependentUpon>EmpleadoModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\EmpleadoModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EmpleadoModel.edmx</DependentUpon>
-      <LastGenOutput>EmpleadoModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Models\EmployeeModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>EmployeeModel.edmx</DependentUpon>
@@ -236,13 +207,6 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <EntityDeploy Include="Models\EmpleadoModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EmpleadoModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\EmpleadoModel.edmx.diagram">
-      <DependentUpon>EmpleadoModel.edmx</DependentUpon>
     </Content>
     <EntityDeploy Include="Models\EmployeeModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -276,11 +240,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Empleadoes\Create.cshtml" />
-    <Content Include="Views\Empleadoes\Delete.cshtml" />
-    <Content Include="Views\Empleadoes\Details.cshtml" />
-    <Content Include="Views\Empleadoes\Edit.cshtml" />
-    <Content Include="Views\Empleadoes\Index.cshtml" />
     <Content Include="Views\Employees\Create.cshtml" />
     <Content Include="Views\Employees\Delete.cshtml" />
     <Content Include="Views\Employees\Details.cshtml" />
